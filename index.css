@@ -1,0 +1,129 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(45deg, rgb(8, 0, 31), rgb(48, 25, 125));
+    color: white;
+    padding-top: 1em;
+}
+
+header{
+    margin: 1em;
+
+}
+
+img{
+    width: 50%;
+    margin-right: 3em;
+    margin-left: 1em;
+}
+
+section{
+    display: flex;
+}
+
+.mini-heading{
+    margin-left: .5em;
+    font-weight: bold;
+    font-size: large;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+a:hover{
+    background-color: rgba(240, 248, 255, 0.089);
+    margin-top: .5em;
+    padding: .5em;
+}
+
+.fa{
+    color: rgb(255, 225, 53);
+}
+
+#time{
+    background-color: rgba(251, 247, 247, 0.308);
+    padding: 1em;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+main{
+    background: linear-gradient(45deg rgb(48, 25, 125), rgb(8, 0, 31));
+    padding: .5em;
+    margin: 0em 1em ;
+    /* margin-bottom: 2em; */
+}
+
+h1{
+    margin: 1em 0em;
+    text-align: center;
+}
+
+p{
+    padding: 1em;
+}
+
+ol{
+    display: flex;
+    list-style: none;
+}
+
+li{
+    border: 3px dotted silver;
+    margin: .5em;
+    border-radius: 100px;
+    padding: 2em;
+    text-align: center;
+    font-weight: bold;
+}
+
+#one, #three, #five{
+    background-color: aliceblue;
+    color: rgb(48, 25, 125);
+}
+
+#one:hover, #three:hover, #five:hover{
+    background-color: rgba(240, 248, 255, 0.395);
+}
+
+#two:hover, #four:hover{
+    background-color: rgba(48, 25, 125, 0.386);
+}
+
+footer{
+    padding: 1em;
+    text-align: center;
+    font-style: oblique;
+    font-weight: bold;
+    background: white;
+    color: black;
+    width: 100%;
+    margin: 0em;
+}
+
+@media (max-width:650px) {
+    section{
+        flex-direction: column;
+        text-align: center;
+    }
+    img{
+        margin: 0% auto;
+    }
+    #time{
+        width: 70%;
+        margin: 0% auto;
+        margin-bottom: 1em;
+    }
+    ol{
+        flex-wrap: wrap;
+    }
+}
